@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Responsive Design para móvil o tablet -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Descripción de la página -->
+        <meta name="description" content="MiaSol, clínica veterinaria. Cuidamos de tu mascota con cariño y profesionalidad.">
+        <!-- Título en la etiqueta de la página -->
+        <title>MiaSol | Clínica Veterinaria</title>
+
+        <!-- Conexión con la hoja de estilos -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Tipografía de Google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" cossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- JavaScript -->
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <!-- CABECERA DE LA PÁGINA -->
+        <header class="header">
+            <div class="header-container">
+                <!-- Logo principal -->
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🐾</span>
+                    <span>Mia<span class="logo-highlight">Sol</span></span>
+                </a>
+
+                <!-- Menú de navegación / Barra principal -->
+                <nav class="navigation" id="navigation">
+                    <a href="#inicio" class="nav-link active">Inicio</a>
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#conocenos" class="nav-link">Conócenos</a>
+                    <a href="#contacto" clas="nav-link">Contacto</a>
+                </nav>
+
+                <!-- Botones de la barra de navegación -->
+                <div class="header-buttons">
+                    <a href="pages/citas.html" class="btn btn-appointment">
+                        Pedir cita
+                    </a>
+                    <a href="pages/registro.html" class="btn btn-login">
+                        Iniciar sesión
+                    </a>
+                    <a href="pages/registro.html" class="btn btn-register">
+                        Registrarse
+                    </a>
+                </div>
+                
+                <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                    ☰
+                </button>
+                
+            </div>
+        </header>
+
+        <main>
+            <!-- PORTADA / BIENVENIDA -->
+            <section class="hero" id="inicio">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <!-- Título de la portada y descripción -->
+                        <span class="eyebrow">CLÍNICA VETERINARIA MIASOL</span>
+                        <h1>
+                            Cuidamos de tus mascotas <span>con el cariño
+                            que merecen</span>
+                        </h1>
+                        <p>
+                            En Clínica Veterinaria MiaSol cuidamos de lo que más te importa.
+                            Ofrecemos atención veterinaria cercana y profesional
+                            para que tu mascota esté siempre en las mejores manos.
+                        </p>
+
+                        <div class="hero-buttons">
+                            <a href="pages/citas.html" class="btn btn-primary">
+                                Pedir cita
+                            </a>
+                            <a href="#servicios" class="btn btn-secondary">
+                                Descubre nuestros servicios
+                            </a>
+                        </div>
+
+                        <div class="hero-trust">
+                            <span>♡ Atención cercana</span>
+                            <span>✚ Cuidado profesional</span>
+                        </div>
+                    </div>
+
+                    <!-- Imagen de la portada -->
+                    <div class="hero-image">
+                        <img src="img/portadaperro.jpg" alt="Mascota atendida con cariño en MiaSol">
+                        <!-- Texto bajo la imagen -->
+                        <div class="image-label">
+                            <span class="label-icon">🐾</span>
+                            <div>
+                                <strong>Su salud nos importa</strong>
+                                <small>Cuidamos de ellos como de los nuestros</small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SERVICIOS -->
+            <section class="section services-section" id="servicios">
+                <div class="section-heading">
+                    <span class="eyebrow">¿CÓMO PODEMOS AYUDARTE?</span>
+                    <h2>Todo lo que necesita, <span>en buensa manos.</span></h2>
+                    <p>
+                        Trabajamos cada día para ofrecer a tu mascota
+                        los cuidados que merece.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Enlaces para llevarte a la página de servicios -->
+                    <article class="service-card">
+                        <div class="service-icon">🩺</div>
+                        <h3>Consultas veterinarias</h3>
+                        <p>Revisiones y atención personalizada para cuidar de su salud.</p>
+                        <a href="pages/servicios.html">Saber más -></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">💉</div>
+                        <h3>Vacunación</h3>
+                        <p>Protección y prevención para mantener a tu mascota sana.</p>
+                        <a href="pages/servicios.html">Saber más -></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">🦷</div>
+                        <h3>Higiene y cuidado</h3>
+                        <p>Atención para su bienestar, higiene y salud general</p>
+                        <a href="pages/servicios.html">Saber más -></a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">🐕</div>
+                        <h3>Seguimiento médico</h3>
+                        <p>Control de tratamientos y evolución de cada paciente</p>
+                        <a href="pages/servicios.html">Saber más -></a>
+                    </article>
+                    
+                </div>
+
+                <div class="section-action">
+                    <a href="pages/servicios.html" class="btn btn-primary">
+                        Ver todos los servicios
+                    </a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
